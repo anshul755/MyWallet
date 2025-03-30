@@ -1,0 +1,78 @@
+.dashboard-container {
+    background-color: #333;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.dashboard {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid goldenrod;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.wallet-header {
+    border-bottom: 2px solid goldenrod;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.wallet-address {
+    font-family: 'Courier New', monospace;
+    color: goldenrod;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.balance {
+    font-size: 2.5rem;
+    color: goldenrod;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.actions {
+    margin: 2rem 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    border: 2px solid goldenrod;
+    background: transparent;
+    color: goldenrod;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: goldenrod;
+    color: #333;
+}
+
+.transactions {
+    margin-top: 2rem;
+}
+
+.transactions h2 {
+    color: goldenrod;
+    border-bottom: 1px solid goldenrod;
+    padding-bottom: 0.5rem;
+}
+
+.transaction-list {
+    color: #888;
+    font-style: italic;
+}
