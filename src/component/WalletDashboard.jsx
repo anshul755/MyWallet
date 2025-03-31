@@ -98,7 +98,7 @@ const WalletDashboard = () => {
               placeholder="Recipient Address"
               value={recipient}
               onChange={(e) => setRecipient(e.target.value)}
-              className="p-2 mb-2 rounded text-black"
+              className="p-2 mb-2 rounded text-white"
             />
             <br />
             <input
@@ -106,7 +106,7 @@ const WalletDashboard = () => {
               placeholder="Amount"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
-              className="p-2 mb-2 rounded text-black"
+              className="p-2 mb-2 rounded text-white"
             />
             <br />
             <button
