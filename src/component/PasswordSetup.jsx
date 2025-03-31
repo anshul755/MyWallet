@@ -14,6 +14,11 @@ export default function PasswordSetup() {
       e.preventDefault();
       return;
     }
+    if (password.length < 8) {
+      setError('Password must be at least 8 characters long');
+      e.preventDefault();
+      return;
+    }
     if (password !== confirmPassword) {
       setError('Passwords do not match');
       e.preventDefault();
@@ -21,7 +26,6 @@ export default function PasswordSetup() {
     }
     setError('');
 
-    // Hash the password using SHA-256
     const hashedPassword = CryptoJS.SHA256(password).toString();
 
     const storedPasswords = JSON.parse(localStorage.getItem("userPasswords") || "[]");
